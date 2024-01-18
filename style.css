@@ -63,6 +63,8 @@
  }
 
  .para {
+   position: absolute;
+   bottom: 5%;
    color: #fff;
    text-align: center;
    display: none;
