@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const result = document.querySelector('.result');
+const para = document.querySelector('.para');
 const wrongValue = document.querySelector('#wrongValue');
 const li = document.querySelectorAll('.option');
 
@@ -20,7 +21,10 @@ form.addEventListener('submit', (e) => {
   else{
     let bmiValue = (weight / ((height / 100) ** 2)).toFixed(2);
     result.innerHTML = `<span>BMI: ${bmiValue}</span>`
+    result.innerHTML = `<h3>Reload the page to try again</h3>`
+    para.innerHTML = `<span><b>Note:</b> Reload the page to try again</span>`
     result.style.display = 'block';
+    para.style.display = 'block';
 
     for(let i=0; i<li.length; i++){
       if(i == 0 && bmiValue < 18.5){

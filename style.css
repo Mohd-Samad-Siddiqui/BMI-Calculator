@@ -56,8 +56,15 @@ input[type="number"] {
   color: #E67E22;
   text-align: center;
   position: absolute;
-  bottom: 2%;
+  bottom: 5%;
   left: 40%;
   border-radius: 5px;
+  display: none;
+}
+
+.para {
+  margin-top: 5px;
+  color: #fff;
+  text-align: center;
   display: none;
 }
